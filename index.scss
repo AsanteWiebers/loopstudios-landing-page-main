@@ -4,9 +4,9 @@
   --font-text: "Poppins", sans-serif;
   --font-cursive-text: "Alfa Slab One", cursive;
   --font-heading: "Alata", sans-serif;
-  $black: black;
-  $gray: gray;
-  $white: white;
+  --black: black;
+  --gray: gray;
+  --white: white;
 }
 
 body {
@@ -59,7 +59,7 @@ body {
   .line {
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: var(--white);
     transition: all 0.8s;
   }
 }
@@ -89,7 +89,7 @@ body {
 .navbar {
   width: 100vw;
   height: 100%;
-  background-color: black;
+  background-color: var(--black);
   position: fixed;
   top: 0;
   right: -100vw;
@@ -100,7 +100,7 @@ body {
 
 .nav-list {
   list-style: none;
-  color: white;
+  color: var(--white);
   cursor: pointer;
   margin-top: 250px;
   margin: 0 auto;
@@ -108,14 +108,14 @@ body {
 
 .nav-list-item {
   list-style: none;
-  font-size: 1.2rem;
   line-height: 2.5rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 80px;
 }
 
 .banner h1 {
-  color: white;
+  color: var(--white);
   line-height: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -125,7 +125,7 @@ body {
   padding: 24px;
   margin: 160px 0 0 0;
   max-width: 375px;
-  border: 1px solid white;
+  border: 1px solid var(--white);
 }
 
 .main {
@@ -150,7 +150,7 @@ body {
 }
 
 .promo_card .promo_card_title {
-  color: black;
+  color: var(--black);
   font-size: 1.6rem;
   margin-bottom: 10px;
   line-height: 2rem;
@@ -159,7 +159,7 @@ body {
 }
 
 .promo_card_text {
-  color: gray;
+  color: var(--gray);
   max-width: 16px 0 0 0;
   line-height: 1.4rem;
   font-weight: bold;
@@ -179,7 +179,7 @@ body {
 }
 
 .mob_creations_btn {
-  border: 1px solid black;
+  border: 1px solid var(--black);
   background: none;
   padding: 13px 48px;
   margin: 34px;
@@ -190,8 +190,8 @@ body {
 }
 
 .mob_creations_btn:hover {
-  color: white;
-  background: black;
+  color: var(--white);
+  background: var(--black);
 }
 
 .creations_btn {
@@ -221,7 +221,7 @@ body {
 }
 
 .creation > p {
-  color: white;
+  color: var(--white);
   line-height: 1.5rem;
   text-align: start;
   max-width: 128px;
@@ -260,8 +260,8 @@ body {
 }
 
 .footer {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   padding: 56px 52px;
 }
 
@@ -295,7 +295,7 @@ a {
 
 .footer_container.footer_copy {
   margin: 25px 0 0 0;
-  color: gray;
+  color: var(--gray);
   font-weight: bold;
 }
 
@@ -348,7 +348,7 @@ a {
     margin: 160px 0 0 0;
     width: 650px;
     max-width: 650px;
-    border: solid 2px white;
+    border: solid 2px var(--white);
   }
 
   .banner h1 {
@@ -376,7 +376,7 @@ a {
     padding: 96px 0 0 96px;
     text-align: left;
     max-width: 540px;
-    background-color: white;
+    background-color: var(--white);
     bottom: 0;
     right: 0;
   }
@@ -389,7 +389,7 @@ a {
   }
 
   .promo_card .promo_card_text {
-    color: gray;
+    color: var(--gray);
     margin: 16px 0 0 0;
     line-height: 1.4rem;
     font-size: 1rem;
