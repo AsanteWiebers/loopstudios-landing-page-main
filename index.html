@@ -1,59 +1,139 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Loopstudios landing Page</title>
+  <link rel="stylesheet" href="/css/index.css">
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
 
-  Immersive experiences that deliver
+  <header class="header">
+    <div class="container">
+      <img class="mob_logo" src="/assets/images/logo.svg" alt="logo" />
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            About
+          </li>
+          <li class="nav-list-item">
+            Careers
+          </li>
+          <li class="nav-list-item">
+            Events
+          </li>
+          <li class="nav-list-item">
+            Products
+          </li>
+          <li class="nav-list-item">
+            Support
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  The leader in interactive VR
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+    <div class="hamburger-menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
 
-  Our creations
 
-  See all
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+    <div class="banner">
+      <h1>
+        Immersive experiences that <br />
+        deliver
+      </h1>
 
-  About
-  Careers
-  Events
-  Products
-  Support
 
-  © 2021 Loopstudios. All rights reserved.
+  </header>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  <main class="main">
+    <article class="promo_card">
+      <img class="promo_card_img" src="/assets/images/desktop/image-interactive.jpg" alt="virtual reality image" />
+
+      <div class="promo_card_txtcontainer">
+        <h2 class="promo_card_title">The leader in interactive VR</h2>
+        <p class="promo_card_text">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe.
+          Our award-winning creations have transformed businesses through
+          digital experiences that bind to their brand.
+        </p>
+      </div>
+    </article>
+    <section class="creations_container">
+
+      <div class="creations_header">
+        <h2 class="creations_title">Our creations</h2>
+        <button class="creations_btn">See all</button>
+      </div>
+
+
+      <div class="creations_cards_container">
+        <div class="creation deep">
+          <p>Deep earth</p>
+        </div>
+        <div class="creation night">
+          <p>Night Arcade</p>
+        </div>
+        <div class="creation soccer">
+          <p>Soccer team VR</p>
+        </div>
+        <div class="creation thegrid">
+          <p>The grid</p>
+        </div>
+        <div class="creation from">
+          <p>From up above VR</p>
+        </div>
+        <div class="creation pocket">
+          <p>Pocket borealis</p>
+        </div>
+        <div class="creation curiosity">
+          <p>The curiosity</p>
+        </div>
+        <div class="creation fisheye">
+          <p>Make it fisheye</p>
+        </div>
+      </div>
+
+
+      <button class="mob_creations_btn">See all</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer_section_container">
+      <div class="footer_left">
+        <img class="footer_logo" src="/assets/images/logo.svg" alt="footer logo" />
+
+      </div>
+
+      <div class="footer_social_container">
+        <div class="footer_socials">
+          <a class="footer_social_icon" href="https://www.facebook.com/"><img src="/assets/images/icon-facebook.svg"
+              alt="facebook icon" /></a>
+          <a class="footer_social_icon" href="https://www.instagram.com/"><img src="/assets/images/icon-instagram.svg"
+              alt="instagram icon" /></a>
+          <a class="footer_social_icon" href="https://twitter.com/"><img src="/assets/images/icon-twitter.svg"
+              alt="twitter icon" /></a>
+          <a class="footer_social_icon" href="https://nl.pinterest.com/"><img src="/assets/images/icon-pinterest.svg"
+              alt="pinterest icon" /></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="/src/main.ts"></script>
 </body>
+
 </html>
