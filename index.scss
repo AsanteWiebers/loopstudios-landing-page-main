@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Poppins:wght@300;400;500&display=swap");
+
 :root {
-  $font-1: "Josefin Sans", sans-serif;
-  $font-2: "Alata", sans-serif;
+  --font-text: "Poppins", sans-serif;
+  --font-cursive-text: "Alfa Slab One", cursive;
+  --font-heading: "Alata", sans-serif;
   $black: black;
+  $gray: gray;
   $white: white;
+}
+
+body {
+  font-family: var(--font-text);
 }
 
 *,
@@ -11,6 +19,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.ff-serif {
+  font-family: var(--font-text);
+}
+
+.ff-cursive-serif {
+  font-family: var(--font-cursive-text);
+}
+
+.ff-heading {
+  font-family: var(--font-heading);
 }
 
 // Mobile screens
@@ -82,7 +102,6 @@
   list-style: none;
   color: white;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 250px;
   margin: 0 auto;
 }
@@ -97,7 +116,6 @@
 
 .banner h1 {
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -134,7 +152,6 @@
 .promo_card .promo_card_title {
   color: black;
   font-size: 1.6rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
   line-height: 2rem;
   text-transform: uppercase;
@@ -146,7 +163,6 @@
   max-width: 16px 0 0 0;
   line-height: 1.4rem;
   font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -158,7 +174,6 @@
 
 .creations_title {
   font-size: 1.6rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   margin: 30px;
 }
@@ -208,7 +223,6 @@
 .creation > p {
   color: white;
   line-height: 1.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: start;
   max-width: 128px;
 }
@@ -269,7 +283,6 @@
 
 .footer_listitem {
   margin: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer_socials {
@@ -315,7 +328,6 @@ a {
       line-height: 2.5rem;
       text-transform: uppercase;
       margin: 10px;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .nav-list-item:hover {
@@ -386,7 +398,6 @@ a {
 
   .creations_title {
     font-size: 1.6rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     text-align: left;
     margin: 30px;
